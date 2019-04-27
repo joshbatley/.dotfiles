@@ -1,0 +1,41 @@
+{
+    "editor.fontSize": 14,
+    "editor.scrollBeyondLastLine": false,
+    "explorer.openEditors.visible": 0,
+    "editor.wordWrap": "on",
+    "workbench.colorTheme": "Night Owl",
+    "workbench.activityBar.visible": false,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.fontLigatures": true,
+    "explorer.decorations.badges": false,
+    "prettier.singleQuote": true,
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.iconTheme": "file-icons",
+    "editor.codeLens": false,
+    "editor.detectIndentation": false,
+    "csharp.format.enable": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#000C1D",
+        "activityBar.border": "#102a44",
+        "sideBar.background": "#001122",
+        "sideBar.border": "#102a44",
+        "sideBar.foreground": "#8BADC1"
+    },
+    "editor.fontFamily": "'Dank Mono', Monaco, 'Courier New', monospace",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
+    "editor.tabCompletion": "on",
+    "files.associations": {
+        "*.mdx": "markdown"
+    },
+    "html.format.wrapLineLength": 100,
+    "window.zoomLevel": 0
+}
