@@ -14,6 +14,9 @@ call plug#end()
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+" ======= Color ========
+set termguicolors
+
 " ======== General ========
 syntax on                   " Turn syntax highlighting on
 colorscheme night-owl       " Night owl theme
@@ -48,8 +51,3 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let g:airline_powerline_fonts = 1
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-
-" ======= Color ========
-if (has("termguicolors"))
- set termguicolors
-endif
