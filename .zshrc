@@ -1,6 +1,19 @@
-plugins=(zsh-autosuggestions)
-ZSH_THEME="powerlevel10k"
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/powerlevel10k.zsh-theme
+export ZSH="/Users/joshbatley/.oh-my-zsh"
 
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+ZSH_THEME="robbyrussell"
+
+plugins=(git zsh-syntax-highlighting)
+
+source $ZSH/oh-my-zsh.sh
+
+if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='vim'
+fi
+
+# Macos - key repeat for vim scrolling
+defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 2
+
+# Alias
+alias dt="dotnet"
+# alias code="code-insiders"
