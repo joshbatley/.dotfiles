@@ -114,6 +114,7 @@ set hidden
 set cmdheight=2
 set updatetime=300
 set shortmess+=c
+let g:coc_global_extensions = ['coc-html', 'coc-eslint', 'coc-tsserver', 'coc-omnisharp', 'coc-json', 'coc-go', 'coc-css']
 
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
