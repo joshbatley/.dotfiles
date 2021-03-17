@@ -11,7 +11,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'fatih/vim-go'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'OmniSharp/omnisharp-vim'
-Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Misc
 Plug 'editorconfig/editorconfig-vim'
@@ -27,6 +27,7 @@ Plug 'vim-airline/vim-airline'
 call plug#end()
 
 " Keybindings 
+let mapleader = "'"
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -38,12 +39,18 @@ inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 inoremap jj <ESC>
+inoremap jk <ESC>
 " Tabs
 nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <leader>W <C-w>S<C-w>j
+nnoremap <leader>q <C-w>q
+nnoremap <leader>s <C-w><C-w>
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+" Custom
+nnoremap <leader>c :noh<CR>
 
 " Theme
 set termguicolors
@@ -75,6 +82,7 @@ set hidden
 set updatetime=300
 set visualbell
 set encoding=UTF-8
+set smartindent
 filetype plugin on
 au FocusLost * :wa
 
@@ -92,7 +100,7 @@ let g:go_doc_keywordprg_enabled = 0
 let g:go_doc_popup_window = 0
 
 " Vim Omnisharp
-let g:OmniSharp_server_path = '/Users/joshbatley/omnisharp-osx/run' 
+" let g:OmniSharp_server_path = '/Users/joshbatley/omnisharp-osx/run' 
 
 " NerdCommenter
 let g:NERDSpaceDelims = 2
@@ -114,7 +122,7 @@ set hidden
 set cmdheight=2
 set updatetime=300
 set shortmess+=c
-let g:coc_global_extensions = ['coc-html', 'coc-eslint', 'coc-tsserver', 'coc-omnisharp', 'coc-json', 'coc-go', 'coc-css']
+let g:coc_global_extensions = ['coc-html', 'coc-eslint', 'coc-tsserver', 'coc-json', 'coc-go', 'coc-css']
 
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
@@ -124,6 +132,10 @@ nmap <silent> gy <Plug>(coc-type-definition)
 
 inoremap <expr> <TAB> pumvisible() ? coc#_select_confirm() : "<TAB>"
 nnoremap <silent> K :call <SID>show_documentation()<CR>
+inoremap <silent><expr> <c-space> coc#refresh()
+
+inoremap <expr> <down> pumvisible() ? "\<C-n>" : ""
+inoremap <expr> <up> pumvisible() ? "\<C-p>" : ""
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
