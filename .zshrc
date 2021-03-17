@@ -16,4 +16,5 @@ defaults write -g KeyRepeat -int 2
 
 # Alias
 alias dt="dotnet"
+alias gitroot='cd "$(git rev-parse --show-cdup)"'
 # alias code="code-insiders"
