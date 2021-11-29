@@ -100,7 +100,10 @@ let g:go_doc_keywordprg_enabled = 0
 let g:go_doc_popup_window = 0
 
 " Vim Omnisharp
-" let g:OmniSharp_server_path = '/Users/joshbatley/omnisharp-osx/run' 
+" let g:OmniSharp_server_path = '/Users/josh/omnisharp-osx/run' 
+autocmd FileType cs nmap <silent> <buffer> gd <plug>(omnisharp_go_to_definition)
+autocmd FileType cs nmap <silent> <buffer> gr <plug>(omnisharp_find_usages)
+autocmd FileType cs nmap <silent> <buffer> gi <plug>(omnisharp_find_implentations)
 
 " NerdCommenter
 let g:NERDSpaceDelims = 2
@@ -122,13 +125,15 @@ set hidden
 set cmdheight=2
 set updatetime=300
 set shortmess+=c
-let g:coc_global_extensions = ['coc-html', 'coc-eslint', 'coc-tsserver', 'coc-json', 'coc-go', 'coc-css']
+let g:coc_global_extensions = ['coc-html', 'coc-eslint', 'coc-tsserver', 'coc-json', 'coc-go', 'coc-css', 'coc-rust-analyzer']
 
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implemenations)
+nmap <silent> gr <Plug>(coc-references)
 
 inoremap <expr> <TAB> pumvisible() ? coc#_select_confirm() : "<TAB>"
 nnoremap <silent> K :call <SID>show_documentation()<CR>
