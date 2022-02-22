@@ -55,6 +55,7 @@ nnoremap <leader>c :noh<CR>
 " Theme
 set termguicolors
 colorscheme github
+
 let g:airline_theme = "github"
 
 " Indent line
@@ -125,7 +126,7 @@ set hidden
 set cmdheight=2
 set updatetime=300
 set shortmess+=c
-let g:coc_global_extensions = ['coc-html', 'coc-eslint', 'coc-tsserver', 'coc-json', 'coc-go', 'coc-css', 'coc-rust-analyzer']
+let g:coc_global_extensions = ['coc-html', 'coc-eslint', 'coc-tsserver', 'coc-json', 'coc-go', 'coc-css', 'coc-rust-analyzer', 'coc-eslint']
 
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
