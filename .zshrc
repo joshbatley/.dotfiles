@@ -6,7 +6,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export ZSH="/Users/josh/.oh-my-zsh"
-export NPM_TOKEN=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
 
 ZSH_THEME="robbyrussell"
 
