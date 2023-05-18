@@ -40,3 +40,4 @@ colorscheme github_dark_dimmed
 let g:coq_settings = { 'auto_start': 'shut-up' }
 
 lua require('config')
+set mouse=r
