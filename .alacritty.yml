@@ -43,3 +43,8 @@ colors:
   indexed_colors:
     - { index: 16, color: '0xd18616' }
     - { index: 17, color: '0xf97583' }
+
+mouse_bindings:
+  - { mouse: Right, action: Paste }
+selection:
+  save_to_clipboard: true
