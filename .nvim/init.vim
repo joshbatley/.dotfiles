@@ -8,6 +8,7 @@ Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -41,3 +42,4 @@ let g:coq_settings = { 'auto_start': 'shut-up' }
 
 lua require('config')
 set mouse=r
+set signcolumn=yes
