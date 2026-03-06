@@ -17,7 +17,7 @@ alias vim=nvim
 
 defaults write com.todesktop.230313mzl4w4u92 ApplePressAndHoldEnabled -bool false
 
-
+# export ZLE_RPROMPT_INDENT=0
 # source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
