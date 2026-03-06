@@ -14,3 +14,5 @@ defaults write -g KeyRepeat -int 2
 
 # Force NVim over vim
 alias vim=nvim
+
+defaults write com.todesktop.230313mzl4w4u92 ApplePressAndHoldEnabled -bool false
