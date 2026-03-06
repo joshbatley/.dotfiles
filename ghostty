@@ -1,0 +1,8 @@
+font-family = MonoLisa
+font-feature = +liga
+theme = GitHub Dark Dimmed
+macos-icon = blueprint
+window-padding-x = 0, 0
+window-padding-balance = true
+window-padding-x = 0
+window-padding-y = 0
