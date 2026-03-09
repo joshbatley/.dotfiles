@@ -8,6 +8,7 @@ cask "cursor"
 cask "obsidian"
 cask "bettermouse"
 cask "sketch"
+cask "1password"
 
 brew "zsh-history-substring-search"
 brew "zsh-syntax-highlighting"
