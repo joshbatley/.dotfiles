@@ -32,6 +32,9 @@ xcode-select --install
 
 After installation, follow the instructions in your terminal to add Homebrew to your ⁠PATH.
 
+3. Docker Desktop
+Docker Desktop must be installed manually from the [official Docker website](https://www.docker.com/products/docker-desktop/). Please do not use the Homebrew cask version, as it is known to have compatibility issues.
+
 Here's the raw content - you can copy everything below the line:
 
 ---
