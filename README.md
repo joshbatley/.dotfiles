@@ -32,8 +32,11 @@ xcode-select --install
 
 After installation, follow the instructions in your terminal to add Homebrew to your ⁠PATH.
 
-3. Docker Desktop
+### 3. Docker Desktop
 Docker Desktop must be installed manually from the [official Docker website](https://www.docker.com/products/docker-desktop/). Please do not use the Homebrew cask version, as it is known to have compatibility issues.
+
+### 4. MonoLisa Font
+This setup uses the MonoLisa font. You will need to download and install this font manually on your system before continuing
 
 Here's the raw content - you can copy everything below the line:
 
