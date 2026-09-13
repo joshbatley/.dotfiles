@@ -17,3 +17,4 @@ defaults write md.obsidian ApplePressAndHoldEnabled -bool false
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 source ~/.config/zsh/git.plugin.zsh
+source ~/.config/zsh/git.lib.zsh
